@@ -17,8 +17,12 @@ public class Main {
       default:
         break;
       case "1":
+        System.out.print("Enter shift: ");
+        int shift = s.nextInt();
+        
         System.out.print(Encrypt.encrypt(msg, 2));
         break;
+        
       case "2":
         Decrypt.decrypt(msg);
         break;
