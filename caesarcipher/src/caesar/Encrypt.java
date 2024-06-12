@@ -17,7 +17,7 @@ public class Encrypt {
       // increment each letter by the specified shift 65-90.
       if (ascii + shift > 90) { // 89
         int overflow = (ascii + shift) - 90; // 89 + 2 = 91 - 90 = 1
-        ascii = overflow;
+        ascii = 65 + overflow;
       } else {
         ascii += shift;
       }
