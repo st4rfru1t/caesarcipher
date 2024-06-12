@@ -7,7 +7,7 @@ public class Main {
     Scanner s = new Scanner(System.in);
     
     System.out.print("Enter string: ");
-    String msg = s.next();
+    String msg = s.nextLine();
     
     System.out.println("1. Encrypt");
     System.out.println("2. Decrypt");
