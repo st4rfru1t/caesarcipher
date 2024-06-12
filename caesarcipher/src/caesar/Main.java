@@ -7,7 +7,7 @@ public class Main {
     Scanner s = new Scanner(System.in);
     
     System.out.print("Enter string: ");
-    String msg = s.next();
+    String msg = s.nextLine();
     
     System.out.println("1. Encrypt");
     System.out.println("2. Decrypt");
@@ -17,9 +17,7 @@ public class Main {
       default:
         break;
       case "1":
-        System.out.print("Choose shift: ");
-        int shift = s.nextInt();
-        System.out.print(Encrypt.encrypt(msg, shift));
+        System.out.print(Encrypt.encrypt(msg, 2));
         break;
       case "2":
         Decrypt.decrypt(msg);
