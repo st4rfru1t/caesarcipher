@@ -1,8 +1,12 @@
 package caesar;
 
 public class Encrypt {
+  
+  public Encrypt() {
+    
+  }
 
-  public String encrypt(String msg, int shift) {
+  public static String encrypt(String msg, int shift) {
     
     String encoded = ""; // empty string we build by iterating
     msg = msg.toUpperCase();
@@ -13,11 +17,11 @@ public class Encrypt {
       // increment each letter by the specified shift 65-90.
       if (ascii + shift > 90) { // 89
         int overflow = (ascii + shift) - 90; // 89 + 2 = 91 - 90 = 1
-        ascii = (char) overflow;
+        ascii = overflow;
       } else {
         ascii += shift;
       }
-      ascii = (char) ascii;
+      tempChar = (char) ascii;
       // append to end string
       encoded += tempChar;
   
