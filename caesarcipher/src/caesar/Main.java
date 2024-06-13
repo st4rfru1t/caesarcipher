@@ -24,7 +24,17 @@ public class Main {
         break;
         
       case "2":
-        Decrypt.decrypt(msg);
+        System.out.print("Specify the shift used to encrypt (1) or try all combinations (2)");
+        int choice2 = s.nextInt();
+        
+        if (choice2 == 1) {
+          System.out.print("Enter shift: ");
+          int shift2 = s.nextInt();
+          
+          System.out.print(Encrypt.encrypt(msg, 25-shift2));
+        } else {
+          Decrypt.decrypt(msg);
+        }
         break;
     }
   }
