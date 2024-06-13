@@ -19,8 +19,8 @@ public class Encrypt {
       if (tempChar == ' ') {
         // skip all
         
-      } else if (ascii + shift > 90) { // 89
-        int overflow = (ascii + shift) - 90; // 89 + 2 = 91 - 90 = 1
+      } else if (ascii + shift > 91) { // 90 + 2
+        int overflow = (ascii + shift) - 90; // 90 + 2 = 92 - 91 = 1
         ascii = 65 + overflow;
 
       } else {
