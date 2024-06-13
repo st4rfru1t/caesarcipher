@@ -20,7 +20,7 @@ public class Main {
         System.out.print("Enter shift: ");
         int shift = s.nextInt();
         
-        System.out.print(Encrypt.encrypt(msg, 2));
+        System.out.print(Encrypt.encrypt(msg, shift));
         break;
         
       case "2":
