@@ -20,7 +20,7 @@ public class Encrypt {
         // skip all  
       } else if (ascii + shift > 90) {
         int overflow = (ascii + shift) - 90; 
-        ascii = 65 + overflow;
+        ascii = 64 + overflow;
 
       } else {
         ascii += shift;
